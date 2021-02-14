@@ -1,7 +1,0 @@
-In [1]:
-library(ggplot2)
-t = seq(0, 2*pi, by = 0.01)
-x = 16 * sin(t)^3
-y = 13 * cos(t) - 5*cos(2*t) - 2*cos(3*t) - cos(4*t)
-positions = data.frame(t, x, y, id = rep("x", length(t)))
-ggplot(positions) + geom_polygon(fill = "red", aes(x, y, group = id))
